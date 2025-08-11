@@ -33,7 +33,7 @@ const Header = () => {
             </nav>
           </div>
 
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-6">
             <div className="flex flex-col items-end">
               <span className="text-sm font-bold text-gray-700 uppercase">Call us</span>
               <Link
@@ -43,11 +43,14 @@ const Header = () => {
                 033 123 565 22
               </Link>
             </div>
+
+            <div className="w-0.5 h-6 bg-black/90" />
+
             <Button
               variant="link"
-              className="text-blue-600 hover:text-blue-700 font-semibold uppercase"
+              className="text-blue-600 hover:text-blue-700 font-bold uppercase"
             >
-              <span>Book My Appointment</span>
+              <span>Book An Appointment</span>
               <Plus className="ml-1 size-8 text-white bg-blue-600 hover:bg-blue-800 p-1.5 rounded-md" />
             </Button>
           </div>
