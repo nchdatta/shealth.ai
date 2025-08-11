@@ -9,7 +9,7 @@ const Header = () => {
     <header className="w-full bg-white shadow-sm fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <div className="flex items-center space-x-4">
-          <Image src="/logo.png" alt="Logo" width={140} height={40} />
+          <Image src="/logo.svg" alt="Logo" width={140} height={40} />
         </div>
         <nav className="hidden md:flex items-center space-x-8 text-gray-700 font-medium">
           <Link href="#about" className="hover:text-blue-500">

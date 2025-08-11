@@ -1,16 +1,26 @@
 'use client';
 
+import { Plus } from 'lucide-react';
+import { Button } from '../ui/button';
+
 const NewsletterSubscribe = () => {
   return (
-    <div>
-      <form className="flex items-center gap-2">
+    <div className="w-full flex flex-col sm:flex-row items-center justify-between">
+      <div className="w-full flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
+        <span className="text-[#0056d2] font-bold">Subscribe Now:</span>
         <input
           type="email"
           placeholder="Email"
-          className="border-b border-gray-300 bg-transparent p-2 focus:outline-none w-full"
+          className="bg-transparent border-b border-black/50 focus:outline-none px-2 py-1 w-full md:w-64"
         />
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-full">Subscribe</button>
-      </form>
+      </div>
+      <Button
+        size="lg"
+        className="w-full mt-4 md:mt-0 flex items-center gap-2 bg-[#0066ff] text-white rounded-full shadow-md hover:bg-blue-700 transition"
+      >
+        Subscribe
+        <Plus size={16} />
+      </Button>
     </div>
   );
 };

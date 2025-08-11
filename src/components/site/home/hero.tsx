@@ -1,6 +1,7 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
+import { getFilePath } from '@/lib/utils';
 import Image from 'next/image';
 
 const Hero = () => {
@@ -17,7 +18,7 @@ const Hero = () => {
       </div>
       <div className="flex justify-center">
         <Image
-          src="/hero-image.png"
+          src={getFilePath('')}
           alt="AI DNA"
           width={400}
           height={400}
