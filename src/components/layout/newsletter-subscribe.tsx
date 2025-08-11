@@ -16,10 +16,12 @@ const NewsletterSubscribe = () => {
       </div>
       <Button
         size="lg"
-        className="w-full mt-4 md:mt-0 flex items-center gap-2 bg-[#0066ff] text-white rounded-full shadow-md hover:bg-blue-700 transition"
+        className="w-full sm:w-fit mt-4 md:mt-0 flex items-center gap-2 bg-[#0066ff] text-white rounded-full shadow-md hover:bg-blue-700 transition"
       >
-        Subscribe
-        <Plus size={16} />
+        <div className="sm:w-44 flex items-center gap-4 justify-between">
+          Subscribe
+          <Plus size={16} />
+        </div>
       </Button>
     </div>
   );
