@@ -1,4 +1,3 @@
-import Container from '@/components/shared/container';
 import AboutSection from '@/components/site/home/about-section';
 import AppointmentForm from '@/components/site/home/appointment-form';
 import Header from '@/components/site/home/header';
@@ -8,7 +7,7 @@ import ServicesSection from '@/components/site/home/services-section';
 
 const Home = () => {
   return (
-    <Container className="bg-gradient-to-b from-white via-[#f6f4ff] to-[#e7e4ff] overflow-hidden">
+    <div className="overflow-hidden">
       <Header />
       <Hero />
       <section className="py-20 text-center">
@@ -24,7 +23,7 @@ const Home = () => {
       <ServicesSection />
       <ResourcesSection />
       <AppointmentForm />
-    </Container>
+    </div>
   );
 };
 

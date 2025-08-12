@@ -10,7 +10,13 @@ const AboutSection = () => {
       className="py-20 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center"
     >
       <div className="flex flex-col gap-4">
-        <Image src="/about-main.png" alt="About" width={400} height={500} className="rounded-xl" />
+        <Image
+          src="/placeholders/about-main.svg"
+          alt="About"
+          width={400}
+          height={500}
+          className="rounded-xl"
+        />
       </div>
       <div>
         <h2 className="text-3xl font-bold">

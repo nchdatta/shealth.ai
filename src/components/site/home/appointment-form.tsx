@@ -1,48 +1,147 @@
 'use client';
 
+import { DatePicker } from '@/components/form-fields/date-picker';
+import Container from '@/components/shared/container';
 import { Button } from '@/components/ui/button';
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { AppointmentFormSchema } from '@/lib/schemas';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Plus } from 'lucide-react';
+import { useForm } from 'react-hook-form';
+import * as z from 'zod';
+
+type AppointmentFormValues = z.infer<typeof AppointmentFormSchema>;
 
 const AppointmentForm = () => {
+  const form = useForm<AppointmentFormValues>({
+    resolver: zodResolver(AppointmentFormSchema),
+    defaultValues: {
+      name: '',
+      email: '',
+      phone: '',
+      date: undefined,
+      message: '',
+    },
+  });
+
+  const onSubmit = (values: AppointmentFormValues) => {
+    console.log(values);
+  };
+
   return (
-    <section id="appointments" className="py-20 bg-white">
-      <div className="max-w-3xl mx-auto px-6">
+    <section id="appointments" className="py-20">
+      <Container>
         <h2 className="text-3xl font-bold text-center">Book an Appointment</h2>
-        <form className="mt-10 grid gap-6">
-          <div className="grid md:grid-cols-2 gap-4">
-            <input
-              type="text"
-              placeholder="Name*"
-              className="border-b border-gray-300 p-3 focus:outline-none"
+
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="mt-10 grid gap-6">
+            <div className="grid md:grid-cols-2 gap-4">
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem className="relative">
+                    <FormControl>
+                      <Input
+                        {...field}
+                        placeholder="Name"
+                        className="border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
+                      />
+                    </FormControl>
+                    <FormMessage className="text-red-500 text-sm mt-1" />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem className="relative">
+                    <FormControl>
+                      <Input
+                        {...field}
+                        type="email"
+                        placeholder="Email"
+                        className="border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
+                      />
+                    </FormControl>
+                    <FormMessage className="text-red-500 text-sm mt-1" />
+                  </FormItem>
+                )}
+              />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              <FormField
+                control={form.control}
+                name="phone"
+                render={({ field }) => (
+                  <FormItem className="relative">
+                    <FormControl>
+                      <Input
+                        {...field}
+                        type="tel"
+                        placeholder="Phone"
+                        className="border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
+                      />
+                    </FormControl>
+                    <FormMessage className="text-red-500 text-sm mt-1" />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="date"
+                render={({ field }) => (
+                  <FormItem className="relative">
+                    <FormControl>
+                      <DatePicker
+                        value={field.value}
+                        onChange={field.onChange}
+                        placeholder="Select date"
+                        icon={false}
+                        className="border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500 text-gray-600 font-normal"
+                      />
+                    </FormControl>
+                    <FormMessage className="text-red-500 text-sm mt-1" />
+                  </FormItem>
+                )}
+              />
+            </div>
+
+            <FormField
+              control={form.control}
+              name="message"
+              render={({ field }) => (
+                <FormItem className="relative">
+                  <FormControl>
+                    <Textarea
+                      {...field}
+                      rows={4}
+                      placeholder="Message"
+                      className="border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
+                    />
+                  </FormControl>
+                  <FormMessage className="text-red-500 text-sm mt-1" />
+                </FormItem>
+              )}
             />
-            <input
-              type="email"
-              placeholder="Email*"
-              className="border-b border-gray-300 p-3 focus:outline-none"
-            />
-          </div>
-          <div className="grid md:grid-cols-2 gap-4">
-            <input
-              type="tel"
-              placeholder="Phone"
-              className="border-b border-gray-300 p-3 focus:outline-none"
-            />
-            <input type="date" className="border-b border-gray-300 p-3 focus:outline-none" />
-          </div>
-          <textarea
-            placeholder="Message"
-            rows={4}
-            className="border-b border-gray-300 p-3 focus:outline-none"
-          ></textarea>
-          <div className="text-center">
+
             <Button
               type="submit"
-              className="px-6 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700"
+              size="lg"
+              className="w-full mx-auto sm:w-fit mt-4 flex items-center gap-2 bg-[#0066ff] text-white rounded-full shadow-md hover:bg-blue-700 transition"
             >
-              Book Now +
+              <div className="sm:w-44 flex items-center gap-4 justify-between">
+                Book Now
+                <Plus size={16} />
+              </div>
             </Button>
-          </div>
-        </form>
-      </div>
+          </form>
+        </Form>
+      </Container>
     </section>
   );
 };
