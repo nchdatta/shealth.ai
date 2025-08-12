@@ -14,6 +14,8 @@ const Header = () => {
           <div className="flex items-center gap-12">
             <Image src="/logo.svg" alt="Logo" width={140} height={40} />
 
+            <div className="w-[1px] h-6 bg-black/90" />
+
             <nav className="hidden md:flex items-center gap-8 text-gray-700 font-medium uppercase">
               <Link href="#about" className="hover:text-blue-500">
                 About Us
@@ -44,7 +46,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="w-0.5 h-6 bg-black/90" />
+            <div className="w-[1px] h-6 bg-black/90" />
 
             <Button
               variant="link"

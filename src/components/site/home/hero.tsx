@@ -1,31 +1,45 @@
 'use client';
 
+import Container from '@/components/shared/container';
 import { Button } from '@/components/ui/button';
-import { getFilePath } from '@/lib/utils';
+import { Plus } from 'lucide-react';
 import Image from 'next/image';
 
 const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-          Unlocking <span className="text-black">ARTIFICIAL INTELLIGENCE</span>{' '}
-          <span className="text-sky-500">for Superior Healthcare</span>
-        </h1>
-        <Button className="mt-8 px-6 py-3 rounded-full bg-blue-600 text-white hover:bg-blue-700">
-          Try Now
-        </Button>
+    <Container as="section" className="pt-30 pb-10">
+      <div className="grid sm:grid-cols-3 gap-8 items-center">
+        {/* Left Side  */}
+        <div className="sm:col-span-2 ms-auto text-right">
+          <p className="text-2xl text-sky-600 font-bold">Unlocking</p>
+          <h1 className="text-4xl md:text-8xl font-bold mb-2">
+            ARTIFICIAL <br /> INTELLIGENCE
+          </h1>
+          <p className="text-2xl text-sky-600 font-bold">for Superior Healthcare</p>
+
+          <Button
+            size="lg"
+            className="ms-auto h-12 has-[>svg]:px-6 text-white font-bold  bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10 mt-10"
+          >
+            <span>Try Now</span>
+            <Plus className="size-4" />
+          </Button>
+        </div>
+
+        {/* Right side  */}
+        <div className="sm:col-span-1">
+          <div className="relative">
+            <Image
+              src="/placeholders/ai.png"
+              alt="ARTIFICIAL INTELLIGENCE"
+              width={380}
+              height={500}
+              className="w-full h-full"
+            />
+          </div>
+        </div>
       </div>
-      <div className="flex justify-center">
-        <Image
-          src={getFilePath('')}
-          alt="AI DNA"
-          width={400}
-          height={400}
-          className="rounded-2xl"
-        />
-      </div>
-    </section>
+    </Container>
   );
 };
 

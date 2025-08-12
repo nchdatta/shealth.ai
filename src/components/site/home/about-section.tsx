@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const AboutSection = () => {
   return (
-    <Container as="section" id="about" className="py-20">
+    <Container as="section" id="about" className="py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
         <div className="flex flex-col gap-4">
           <Image

@@ -31,7 +31,7 @@ const AppointmentForm = () => {
   };
 
   return (
-    <section id="appointments" className="py-20">
+    <section id="appointments" className="py-10">
       <Container>
         <h2 className="text-3xl font-bold text-center">Book an Appointment</h2>
 
