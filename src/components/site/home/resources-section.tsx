@@ -1,18 +1,97 @@
+import Container from '@/components/shared/container';
+import ResourceCard from './resource-card';
+
 const ResourcesSection = () => {
   return (
-    <section id="resources" className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl font-bold">Resources</h2>
-        <p className="text-gray-600 mt-2">Over the years, we have grown...</p>
-        <div className="mt-10 grid md:grid-cols-3 gap-6">
-          {['Video Library', 'Free Download', 'Quick Reads', 'Press'].map((res) => (
-            <div key={res} className="bg-white shadow rounded-xl p-6 hover:shadow-lg transition">
-              <p className="font-medium">{res}</p>
+    <Container as="section" id="resources" className="relative py-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-28 items-start">
+        {/* Left: Cards */}
+        <div className="order-2 sm:order-1">
+          {/* Layout with subtle offsets to mimic the design */}
+          <div className="grid grid-cols-2 gap-6">
+            <ResourceCard
+              item={{
+                title: 'Video Library',
+                description: 'Explore the complete listing of our Webinars and podcasts',
+                image: '/placeholders/video.svg',
+                buttonTitle: 'Explore Now',
+                count: 1,
+              }}
+              colorScheme="#0063FF"
+              className="pt-10"
+            />
+            <ResourceCard
+              item={{
+                title: 'Free Download',
+                description:
+                  'Our research material including eBooks, Case Studies is  available online',
+                image: '/placeholders/video.svg',
+                buttonTitle: 'Download',
+                count: 2,
+              }}
+              colorScheme="#0063FF"
+            />
+          </div>
+        </div>
+
+        {/* Right: Heading and copy */}
+        <div className="order-1 sm:order-2">
+          <h2 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
+            Resources
+          </h2>
+
+          <div className="mt-10 space-y-10">
+            <div>
+              <h3 className="text-xl font-bold text-blue-700 dark:text-blue-100">Dummy copy</h3>
+              <p className="mt-2 text-base text-slate-600 dark:text-slate-300">
+                for Superior Healthcare has been dedicated to providing high-quality medical care to
+                our patients. Over the years, we have grown to become one of the most trusted
+                healthcare providers.
+              </p>
             </div>
-          ))}
+
+            <div>
+              <h3 className="text-xl font-bold text-blue-700 dark:text-blue-100">Dummy copy</h3>
+              <p className="mt-2 text-base text-slate-600 dark:text-slate-300">
+                Over the years, we have grown to become one of the most trusted healthcare providers
+                in the area.
+              </p>
+              <p className="mt-2 text-base text-slate-600 dark:text-slate-300">
+                Over the years, we have grown to become one of the most trusted healthcare providers
+                in the area.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+
+      <div className="max-w-xl mx-auto -mt-6">
+        <div className="grid grid-cols-2 gap-6">
+          <ResourceCard
+            item={{
+              title: 'Quick Reads',
+              description: 'The Latest on our Blog & Medical  services In The News',
+              image: '/placeholders/video.svg',
+              buttonTitle: 'Read Now',
+              count: 3,
+            }}
+            colorScheme="#A63AB3"
+          />
+          <ResourceCard
+            item={{
+              title: 'Press',
+              description:
+                'Please get in touch with our Marketing & PR Team for any press or PR related inquiry ',
+              image: '/placeholders/video.svg',
+              buttonTitle: 'Contact Us',
+              count: 4,
+            }}
+            colorScheme="#A63AB3"
+            className="pt-20"
+          />
+        </div>
+      </div>
+    </Container>
   );
 };
 
