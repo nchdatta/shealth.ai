@@ -11,7 +11,7 @@ const AboutSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
         <div className="flex flex-col gap-4">
           <Image
-            src="/placeholders/about-main.svg"
+            src="/placeholders/about-main.webp"
             alt="About"
             width={400}
             height={500}
