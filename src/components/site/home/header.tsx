@@ -12,7 +12,9 @@ const Header = () => {
       <Container className="py-2 sm:py-4">
         <div className="w-full flex items-center justify-between">
           <div className="flex items-center gap-12">
-            <Image src="/logo.svg" alt="Logo" width={140} height={40} />
+            <Link href="/">
+              <Image src="/logo.svg" alt="Logo" width={140} height={40} />
+            </Link>
 
             <div className="w-[1px] h-6 bg-black/90" />
 

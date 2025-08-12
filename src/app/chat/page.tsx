@@ -4,6 +4,12 @@ import FooterNote from '@/components/site/chat/footer-note';
 import LogoSection from '@/components/site/chat/logo-section';
 import MainHeading from '@/components/site/chat/main-heading';
 import PromptInput from '@/components/site/chat/prompt-input';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Chat with ShealthAI',
+  description: 'Engage in a conversation with ShealthAI',
+};
 
 const page = () => {
   return (
