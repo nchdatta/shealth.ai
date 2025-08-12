@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 interface Props {
   as?: React.ElementType;
   className?: string;
-  id: string | undefined;
+  id?: string | undefined;
   children: React.ReactNode;
 }
 
