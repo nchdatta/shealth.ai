@@ -1,4 +1,3 @@
-import Footer from '@/components/layout/footer';
 import RootProvider from '@/components/providers/root-provider';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -23,9 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <RootProvider>
-          {children}
-
-          <Footer />
+          <main>{children}</main>
         </RootProvider>
       </body>
     </html>

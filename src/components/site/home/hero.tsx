@@ -4,6 +4,7 @@ import Container from '@/components/shared/container';
 import { Button } from '@/components/ui/button';
 import { Plus } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -17,13 +18,15 @@ const Hero = () => {
           </h1>
           <p className="text-2xl text-sky-600 font-bold">for Superior Healthcare</p>
 
-          <Button
-            size="lg"
-            className="ms-auto h-12 has-[>svg]:px-6 text-white font-bold  bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10 mt-10"
-          >
-            <span>Try Now</span>
-            <Plus className="size-4" />
-          </Button>
+          <Link href="/chat">
+            <Button
+              size="lg"
+              className="ms-auto h-12 has-[>svg]:px-6 text-white font-bold  bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10 mt-10"
+            >
+              <span>Try Now</span>
+              <Plus className="size-4" />
+            </Button>
+          </Link>
         </div>
 
         {/* Right side  */}
