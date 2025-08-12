@@ -79,7 +79,7 @@ const PromptInput = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center mt-8 w-full space-y-4">
+    <div className="flex flex-col items-center justify-center mt-8 w-full gap-4">
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
