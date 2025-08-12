@@ -16,11 +16,11 @@ interface Props {
 const ResourceCard = ({ item, className, colorScheme = 'blue' }: Props) => {
   return (
     <div className={className}>
-      <div className="border border-t-blue-400 border-r-blue-400 border-l-blue-200 border-b-blue-200 px-6 py-7 rounded-tl-[7rem] rounded-tr-[2.5rem] rounded-br-[7rem] rounded-bl-[2.5rem] relative">
+      <div className="border border-t-blue-400 border-r-blue-400 border-l-blue-200 border-b-blue-200 px-2 sm:px-6 py-4 sm:py-7 rounded-tl-[4rem] rounded-tr-[1.5rem] rounded-br-[4rem] rounded-bl-[1.5rem] sm:rounded-tl-[7rem] sm:rounded-tr-[2.5rem] sm:rounded-br-[7rem] sm:rounded-bl-[2.5rem] relative">
         {/* badge  */}
         <div className="flex justify-end">
           <span
-            className="w-8 h-8 rounded-full font-semibold text-white flex justify-center items-center shadow-2xl"
+            className="w-6 sm:w-8 h-6 sm:h-8 rounded-full font-semibold text-white flex justify-center items-center shadow-2xl"
             style={{
               backgroundColor: colorScheme,
             }}
@@ -37,12 +37,13 @@ const ResourceCard = ({ item, className, colorScheme = 'blue' }: Props) => {
         <h3 className="mb-5 text-center text-lg font-bold text-slate-900">{item.title}</h3>
 
         {/* Description */}
-        <p className="mb-8 text-center text-sm text-slate-600">{item.description}</p>
+        <p className="mb-8 text-center text-xs sm:text-sm text-slate-600">{item.description}</p>
 
         {/* Button */}
         <div className="flex justify-center">
           <Button
-            className="h-11 rounded-xl px-6 py-3 text-lg font-semibold text-white hover:opacity-80"
+            size="sm"
+            className="sm:h-11 rounded-xl sm:px-6 sm:py-3 text-sm sm:text-lg sm:font-semibold text-white hover:opacity-80"
             style={{
               backgroundColor: colorScheme,
             }}

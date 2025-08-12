@@ -35,7 +35,7 @@ const Header = () => {
             </nav>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-6">
             <div className="flex flex-col items-end">
               <span className="text-sm font-bold text-gray-700 uppercase">Call us</span>
               <Link
@@ -46,7 +46,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="w-[1px] h-6 bg-black/90" />
+            <div className="w-[1px] h-6 bg-black/90 hidden sm:block" />
 
             <Button
               variant="link"
