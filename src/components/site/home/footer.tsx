@@ -1,9 +1,9 @@
 import { Clock, Mail, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Container from '../shared/container';
-import Copyright from './copyright';
-import NewsletterSubscribe from './newsletter-subscribe';
+import Copyright from '../../layout/copyright';
+import NewsletterSubscribe from '../../layout/newsletter-subscribe';
+import Container from '../../shared/container';
 
 const Footer = () => {
   return (

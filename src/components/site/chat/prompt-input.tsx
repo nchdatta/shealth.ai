@@ -80,6 +80,36 @@ const PromptInput = () => {
 
   return (
     <div className="flex flex-col items-center justify-center mt-8 w-full gap-4">
+      {/* Uploaded Files Preview */}
+      {files.length > 0 && (
+        <div className="flex flex-col gap-2 w-full max-w-3xl">
+          {files.map((file, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-between rounded border p-2 text-sm bg-white"
+            >
+              <div className="flex items-center gap-2">
+                {file.type.startsWith('image/') ? (
+                  <Image
+                    width={40}
+                    height={40}
+                    src={URL.createObjectURL(file)}
+                    alt={file.name}
+                    className="h-10 w-10 rounded object-cover"
+                  />
+                ) : (
+                  <span className="text-blue-500">📄 PDF</span>
+                )}
+                <span className="truncate max-w-[200px]">{file.name}</span>
+              </div>
+              <Button size="icon" variant="ghost" onClick={() => removeFile(index)}>
+                <X className="h-4 w-4" />
+              </Button>
+            </div>
+          ))}
+        </div>
+      )}
+
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
@@ -146,36 +176,6 @@ const PromptInput = () => {
           </Button>
         </form>
       </Form>
-
-      {/* Uploaded Files Preview */}
-      {files.length > 0 && (
-        <div className="flex flex-col gap-2 w-full max-w-3xl">
-          {files.map((file, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-between rounded border p-2 text-sm bg-white"
-            >
-              <div className="flex items-center gap-2">
-                {file.type.startsWith('image/') ? (
-                  <Image
-                    width={40}
-                    height={40}
-                    src={URL.createObjectURL(file)}
-                    alt={file.name}
-                    className="h-10 w-10 rounded object-cover"
-                  />
-                ) : (
-                  <span className="text-blue-500">📄 PDF</span>
-                )}
-                <span className="truncate max-w-[200px]">{file.name}</span>
-              </div>
-              <Button size="icon" variant="ghost" onClick={() => removeFile(index)}>
-                <X className="h-4 w-4" />
-              </Button>
-            </div>
-          ))}
-        </div>
-      )}
     </div>
   );
 };

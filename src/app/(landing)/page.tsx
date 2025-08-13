@@ -1,5 +1,6 @@
 import AboutSection from '@/components/site/home/about-section';
 import AppointmentForm from '@/components/site/home/appointment-form';
+import Footer from '@/components/site/home/footer';
 import Header from '@/components/site/home/header';
 import Hero from '@/components/site/home/hero';
 import ResourcesSection from '@/components/site/home/resources-section';
@@ -9,13 +10,43 @@ import UnleashingSection from '@/components/site/home/unleashing-section';
 const Home = () => {
   return (
     <div className="overflow-hidden">
-      <Header />
-      <Hero />
-      <UnleashingSection />
-      <AboutSection />
-      <ServicesSection />
-      <ResourcesSection />
-      <AppointmentForm />
+      <div
+        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat"
+        style={{
+          backgroundImage: "url('/placeholders/shape-7.jpg')",
+          backgroundSize: '100%',
+          backgroundPosition: 'center top',
+        }}
+      >
+        <Header />
+        <Hero />
+        <UnleashingSection />
+      </div>
+
+      <div
+        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat bg-contain pt-24"
+        style={{
+          backgroundImage: "url('/placeholders/shape-10.jpg')",
+          backgroundSize: '100%',
+          backgroundPosition: 'center top',
+        }}
+      >
+        <AboutSection />
+        <ServicesSection />
+        <ResourcesSection />
+      </div>
+
+      <div
+        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat bg-contain"
+        style={{
+          backgroundImage: "url('/placeholders/shape-11.jpg')",
+          backgroundSize: '100%',
+          backgroundPosition: 'left center',
+        }}
+      >
+        <AppointmentForm />
+        <Footer />
+      </div>
     </div>
   );
 };

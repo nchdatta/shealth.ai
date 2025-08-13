@@ -65,7 +65,7 @@ const ResourcesSection = () => {
         </div>
       </div>
 
-      <div className="max-w-xl mx-auto mt-5 sm:-mt-6">
+      <div className="max-w-xl mx-auto mt-5 sm:-mt-2">
         <div className="grid grid-cols-2 gap-4 sm:gap-6">
           <ResourceCard
             item={{

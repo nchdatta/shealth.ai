@@ -7,19 +7,19 @@ import Image from 'next/image';
 
 const AboutSection = () => {
   return (
-    <Container as="section" id="about" className="py-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 items-center">
-        <div className="flex flex-col gap-4">
+    <Container as="section" id="about" className="py-20">
+      <div className="grid grid-cols-1 sm:grid-cols-5 items-center gap-4 sm:gap-4">
+        <div className="sm:col-span-2 flex flex-col gap-4">
           <Image
-            src="/placeholders/about-main.webp"
+            src="/placeholders/about-main.png"
             alt="About"
             width={400}
             height={500}
-            className="rounded-xl w-full h-full"
+            className="rounded-xl w-full max-w-[95%] h-full object-cover object-center"
           />
         </div>
 
-        <div>
+        <div className="sm:col-span-3">
           <h3 className="text-2xl sm:text-4xl font-bold mb-1.5">About Unlocking</h3>
 
           <h2 className="text-4xl font-bold mb-10">

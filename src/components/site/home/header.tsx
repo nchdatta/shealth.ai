@@ -2,14 +2,40 @@
 
 import Container from '@/components/shared/container';
 import { Button } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 import { Plus } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 200);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleScrollTo = (id: string) => {
+    const el = document.querySelector(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
-    <header className="w-full mx-auto bg-white fixed left-0 top-0 z-50">
-      <Container className="py-2 sm:py-4">
+    <header
+      className={cn(
+        'w-full mx-auto fixed left-0 top-0 z-[999]',
+        'transition-all duration-200 ease-in',
+        scrolled ? 'bg-white text-gray-800' : 'bg-transparent'
+      )}
+    >
+      <Container className="py-2 sm:py-3">
         <div className="w-full flex items-center justify-between">
           <div className="flex items-center gap-12">
             <Link href="/">
@@ -18,22 +44,42 @@ const Header = () => {
 
             <div className="w-[1px] h-6 bg-black/90" />
 
-            <nav className="hidden md:flex items-center gap-8 text-gray-700 font-medium uppercase">
-              <Link href="#about" className="hover:text-blue-500">
+            <nav className="hidden md:flex items-center gap-4 text-gray-700 font-medium uppercase">
+              <Button
+                variant="ghost"
+                className="text-gray-700 font-medium uppercase"
+                onClick={() => handleScrollTo('#about')}
+              >
                 About Us
-              </Link>
-              <Link href="#services" className="hover:text-blue-500">
+              </Button>
+              <Button
+                variant="ghost"
+                className="text-gray-700 font-medium uppercase"
+                onClick={() => handleScrollTo('#services')}
+              >
                 Services
-              </Link>
-              <Link href="#resources" className="hover:text-blue-500">
+              </Button>
+              <Button
+                variant="ghost"
+                className="text-gray-700 font-medium uppercase"
+                onClick={() => handleScrollTo('#resources')}
+              >
                 Resources
-              </Link>
-              <Link href="#appointments" className="hover:text-blue-500">
+              </Button>
+              <Button
+                variant="ghost"
+                className="text-gray-700 font-medium uppercase"
+                onClick={() => handleScrollTo('#appointments')}
+              >
                 Appointments
-              </Link>
-              <Link href="#contact" className="hover:text-blue-500">
+              </Button>
+              <Button
+                variant="ghost"
+                className="text-gray-700 font-medium uppercase"
+                onClick={() => handleScrollTo('#contact')}
+              >
                 Contact Us
-              </Link>
+              </Button>
             </nav>
           </div>
 
@@ -53,6 +99,7 @@ const Header = () => {
             <Button
               variant="link"
               className="text-blue-600 hover:text-blue-700 font-bold uppercase"
+              onClick={() => handleScrollTo('#appointments')}
             >
               <span>Book An Appointment</span>
               <Plus className="ml-1 size-8 text-white bg-blue-600 hover:bg-blue-800 p-1.5 rounded-md" />

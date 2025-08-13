@@ -3,7 +3,7 @@ import ServiceCard from './service-card';
 
 const ServiceSection = () => {
   return (
-    <Container as="section" id="resources" className="relative py-10">
+    <Container as="section" id="services" className="relative py-10">
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 sm:gap-28 items-center">
         {/* Left: Heading and copy */}
         <div className="sm:col-span-1">
