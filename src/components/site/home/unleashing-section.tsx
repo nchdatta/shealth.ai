@@ -3,6 +3,7 @@
 import Container from '@/components/shared/container';
 import { Button } from '@/components/ui/button';
 import { Plus } from 'lucide-react';
+import Link from 'next/link';
 
 const UnleashingSection = () => {
   return (
@@ -16,13 +17,15 @@ const UnleashingSection = () => {
 
         <span className="inline-block w-14 h-[1px] bg-gray-600 my-10 sm:my-16" />
 
-        <Button
-          size="lg"
-          className="w-full sm:w-auto h-12 has-[>svg]:px-6 text-white font-bold  bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10"
-        >
-          <span>Get Started Now</span>
-          <Plus className="size-4" />
-        </Button>
+        <Link href="https://sandbox.shealth.ai/">
+          <Button
+            size="lg"
+            className="w-full sm:w-auto h-12 has-[>svg]:px-6 text-white font-bold  bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10"
+          >
+            <span>Get Started Now</span>
+            <Plus className="size-4" />
+          </Button>
+        </Link>
       </div>
     </Container>
   );

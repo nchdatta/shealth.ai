@@ -18,7 +18,7 @@ const Hero = () => {
           </h1>
           <p className="text-2xl text-sky-600 font-bold">for Superior Healthcare</p>
 
-          <Link href="/chat">
+          <Link href="https://beta.shealth.ai/">
             <Button
               size="lg"
               className="ms-auto h-12 has-[>svg]:px-6 text-white font-bold  bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10 mt-10"
