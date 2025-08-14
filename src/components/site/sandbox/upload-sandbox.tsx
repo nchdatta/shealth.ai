@@ -48,12 +48,12 @@ const UploadSandbox = () => {
             key={idx}
             className="rounded-2xl border border-gray-100 shadow bg-white/30 backdrop-blur-lg flex-flex-col justify-between"
           >
-            <CardHeader className="flex flex-col pt-4">
+            <CardHeader className="flex flex-col pt-4 px-2 sm:px-6">
               {item.icon}
               <CardTitle className="text-lg font-bold text-gray-900 mt-5">{item.title}</CardTitle>
               <p className="text-left text-gray-600 text-sm">{item.description}</p>
             </CardHeader>
-            <CardContent className="flex justify-center">
+            <CardContent className="flex justify-center px-2 sm:px-6">
               <Button
                 size="lg"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8"
