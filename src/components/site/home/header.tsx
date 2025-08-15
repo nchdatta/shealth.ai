@@ -37,14 +37,20 @@ const Header = () => {
     >
       <Container className="py-2 sm:py-3">
         <div className="w-full flex items-center justify-between">
-          <div className="flex items-center gap-12">
-            <Link href="/">
-              <Image src="/logo.svg" alt="Logo" width={140} height={40} />
+          <div className="flex items-center gap-4 2xl:gap-12">
+            <Link href="/" className="inline-block w-20 sm:w-44">
+              <Image
+                src="/logo.svg"
+                alt="Logo"
+                width={140}
+                height={40}
+                className="w-full object-cover"
+              />
             </Link>
 
             <div className="w-[1px] h-6 bg-black/90" />
 
-            <nav className="hidden md:flex items-center gap-3 text-gray-700 font-medium uppercase">
+            <nav className="hidden xl:flex items-center gap-1.5 2xl:gap-3 text-gray-700 font-medium uppercase">
               <Button
                 variant="linkV2"
                 className="text-gray-700 font-medium uppercase hover:text-[#008FD0]"
