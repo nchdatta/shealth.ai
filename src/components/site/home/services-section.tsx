@@ -26,21 +26,21 @@ const ServiceSection = () => {
         {/* Right: Cards */}
         <div className="sm:col-span-2">
           {/* Layout with subtle offsets to mimic the design */}
-          <div className="grid grid-cols-2 gap-4 mb-4">
+          <div className="flex items-center gap-4 mb-4">
             <ServiceCard
               item={{
                 title: 'Clinical Research',
-                image: '/placeholders/video.svg',
+                image: '/placeholders/clinical-dna.png',
                 icon: '/placeholders/icon-1.svg',
               }}
               colorScheme="#0063FF"
-              className="pt-7"
+              className="pt-8"
             />
             <ServiceCard
               item={{
                 title: 'Diagnosis',
-                image: '/placeholders/video.svg',
-                icon: '/placeholders/icon-1.svg',
+                image: '/placeholders/diagnosis.png',
+                icon: '/placeholders/stethoscope.svg',
               }}
               colorScheme="#0063FF"
             />
@@ -50,16 +50,16 @@ const ServiceSection = () => {
             <ServiceCard
               item={{
                 title: 'Diagnostic',
-                image: '/placeholders/video.svg',
-                icon: '/placeholders/icon-1.svg',
+                image: '/placeholders/diagnostic.png',
+                icon: '/placeholders/icon-3.svg',
               }}
               colorScheme="#A63AB3"
             />
             <ServiceCard
               item={{
                 title: 'Drug Discovery',
-                image: '/placeholders/video.svg',
-                icon: '/placeholders/icon-1.svg',
+                image: '/placeholders/discovery.png',
+                icon: '/placeholders/icon-4.svg',
               }}
               colorScheme="#A63AB3"
               className="pt-7"

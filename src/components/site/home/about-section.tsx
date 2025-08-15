@@ -37,7 +37,7 @@ const AboutSection = () => {
 
           <Button
             size="lg"
-            className="w-full sm:w-auto h-12 has-[>svg]:px-6 text-white font-bold  bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10 mt-14"
+            className="w-full sm:w-auto h-12 has-[>svg]:px-6 text-white font-bold  bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10  shadow-[0_4px_20px_rgba(37,99,235,0.5)] mt-14"
           >
             <span>Get Started Now</span>
             <Plus className="size-4" />

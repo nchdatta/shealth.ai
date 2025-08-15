@@ -131,7 +131,7 @@ const AppointmentForm = () => {
           <Button
             type="submit"
             size="lg"
-            className="w-full mx-auto sm:w-fit mt-4 flex items-center gap-2 bg-[#0066ff] text-white rounded-full shadow-md hover:bg-blue-700 transition"
+            className="w-full mx-auto sm:w-fit mt-4 flex items-center gap-2 bg-[#0066ff] text-white rounded-full hover:bg-blue-700 transition  shadow-[0_4px_20px_rgba(37,99,235,0.5)]"
           >
             <div className="sm:w-44 flex items-center gap-4 justify-between">
               Book Now

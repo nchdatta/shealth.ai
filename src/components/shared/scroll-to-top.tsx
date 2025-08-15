@@ -34,7 +34,7 @@ const ScrollToTop = () => {
       variant="default"
       size="lg"
       onClick={scrollToTop}
-      className={`size-11 fixed bottom-8 right-8 z-[999] bg-blue-700 hover:bg-blue-800 text-white rounded-full p-1 shadow-lg transition-opacity duration-500 ease-in-out ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+      className={`size-11 fixed bottom-8 right-8 z-[999] bg-blue-700 hover:bg-blue-800 text-white rounded-full p-1 transition-opacity duration-500 ease-in-out shadow-[0_4px_20px_rgba(37,99,235,0.5)] ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
       aria-label="Scroll to top"
       style={{ transition: 'opacity 0.5s ease-in-out, transform 0.5s ease-in-out' }}
     >

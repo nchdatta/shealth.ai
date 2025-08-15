@@ -4,7 +4,7 @@ import ResourceCard from './resource-card';
 const ResourcesSection = () => {
   return (
     <Container as="section" id="resources" className="relative py-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-28 items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-20 items-start">
         {/* Left: Cards */}
         <div className="order-2 sm:order-1">
           {/* Layout with subtle offsets to mimic the design */}
@@ -18,14 +18,14 @@ const ResourcesSection = () => {
                 count: 1,
               }}
               colorScheme="#0063FF"
-              className="pt-10"
+              className="pt-8"
             />
             <ResourceCard
               item={{
                 title: 'Free Download',
                 description:
                   'Our research material including eBooks, Case Studies is  available online',
-                image: '/placeholders/video.svg',
+                image: '/placeholders/download.svg',
                 buttonTitle: 'Download',
                 count: 2,
               }}
@@ -65,13 +65,13 @@ const ResourcesSection = () => {
         </div>
       </div>
 
-      <div className="max-w-xl mx-auto mt-5 sm:-mt-2">
+      <div className="max-w-xl mx-auto mt-5 sm:-mt-4">
         <div className="grid grid-cols-2 gap-4 sm:gap-6">
           <ResourceCard
             item={{
               title: 'Quick Reads',
               description: 'The Latest on our Blog & Medical  services In The News',
-              image: '/placeholders/video.svg',
+              image: '/placeholders/quick-reads.svg',
               buttonTitle: 'Read Now',
               count: 3,
             }}
@@ -82,7 +82,7 @@ const ResourcesSection = () => {
               title: 'Press',
               description:
                 'Please get in touch with our Marketing & PR Team for any press or PR related inquiry ',
-              image: '/placeholders/video.svg',
+              image: '/placeholders/press.svg',
               buttonTitle: 'Contact Us',
               count: 4,
             }}
