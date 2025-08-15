@@ -12,9 +12,9 @@ const Footer = () => {
         <Image src="/logo.svg" alt="Shealth AI Logo" width={150} height={50} className="mb-6" />
 
         {/* Top section with two columns */}
-        <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-start md:items-end">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-20 2xl:gap-36 items-start md:items-end relative">
           {/* Left Column */}
-          <div className="md:border-r border-black/30 pr-0 md:pr-8">
+          <div className="md:border-r-2 border-[#002130] pr-0 md:pr-8 sm:pb-36">
             <h3 className="text-[#0056d2] font-medium sm:font-bold text-xl sm:text-3xl leading-snug">
               Unlocking Artificial Intelligence For Superior Healthcare
             </h3>
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
 
           {/* Right Column */}
-          <div className="md:pl-8">
+          <div className="md:pl-8 pb-5 sm:pb-20">
             <h4 className="text-[#0056d2] font-bold text-lg sm:text-xl">Contact Us:</h4>
             <p className="mt-2 flex flex-wrap items-center gap-2 text-gray-800">
               <Clock size={16} />
@@ -49,10 +49,13 @@ const Footer = () => {
               shealth@gmail.com
             </Link>
           </div>
+
+          <div className="hidden sm:inline-block absolute w-[2px] h-40 bg-[#002130] left-0 -bottom-8 -translate-x-0" />
+          <div className="absolute w-[2px] h-40 bg-[#002130] right-0 -bottom-8 -translate-x-0" />
         </div>
 
         {/* Divider */}
-        <div className="border-t border-black/30 mt-8 pt-6 flex flex-col md:flex-row items-center justify-between">
+        <div className="border-t-2 border-[#002130] pt-5 sm:pt-16 flex flex-col md:flex-row items-center justify-between">
           {/* Subscribe section */}
           <NewsletterSubscribe />
         </div>
