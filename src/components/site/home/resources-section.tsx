@@ -4,11 +4,11 @@ import ResourceCard from './resource-card';
 const ResourcesSection = () => {
   return (
     <Container as="section" id="resources" className="relative py-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-20 items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-28 items-start">
         {/* Left: Cards */}
         <div className="order-2 sm:order-1">
           {/* Layout with subtle offsets to mimic the design */}
-          <div className="grid grid-cols-2 gap-4 sm:gap-6">
+          <div className="flex items-center gap-4 sm:gap-5">
             <ResourceCard
               item={{
                 title: 'Video Library',
@@ -36,14 +36,14 @@ const ResourcesSection = () => {
 
         {/* Right: Heading and copy */}
         <div className="order-1 sm:order-2">
-          <h2 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
+          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-[#002130] dark:text-slate-100">
             Resources
           </h2>
 
           <div className="mt-10 space-y-10">
             <div>
               <h3 className="text-xl font-bold text-blue-700 dark:text-blue-100">Dummy copy</h3>
-              <p className="mt-2 text-base text-slate-600 dark:text-slate-300">
+              <p className="mt-2 text-lg text-[#002130] dark:text-slate-300">
                 for Superior Healthcare has been dedicated to providing high-quality medical care to
                 our patients. Over the years, we have grown to become one of the most trusted
                 healthcare providers.
@@ -52,11 +52,11 @@ const ResourcesSection = () => {
 
             <div>
               <h3 className="text-xl font-bold text-blue-700 dark:text-blue-100">Dummy copy</h3>
-              <p className="mt-2 text-base text-slate-600 dark:text-slate-300">
+              <p className="mt-2 text-lg text-[#002130] dark:text-slate-300">
                 Over the years, we have grown to become one of the most trusted healthcare providers
                 in the area.
               </p>
-              <p className="mt-2 text-base text-slate-600 dark:text-slate-300">
+              <p className="mt-2 text-lg text-[#002130] dark:text-slate-300">
                 Over the years, we have grown to become one of the most trusted healthcare providers
                 in the area.
               </p>
@@ -65,8 +65,8 @@ const ResourcesSection = () => {
         </div>
       </div>
 
-      <div className="max-w-xl mx-auto mt-5 sm:-mt-4">
-        <div className="grid grid-cols-2 gap-4 sm:gap-6">
+      <div className="max-w-xl mx-auto mt-5 sm:-mt-52">
+        <div className="flex items-center gap-4 sm:gap-5">
           <ResourceCard
             item={{
               title: 'Quick Reads',
@@ -76,6 +76,7 @@ const ResourcesSection = () => {
               count: 3,
             }}
             colorScheme="#A63AB3"
+            className="flex-1"
           />
           <ResourceCard
             item={{
@@ -87,7 +88,7 @@ const ResourcesSection = () => {
               count: 4,
             }}
             colorScheme="#A63AB3"
-            className="pt-20"
+            className="sm:pt-72 flex-1"
           />
         </div>
       </div>

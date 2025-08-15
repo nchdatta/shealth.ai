@@ -12,16 +12,16 @@ const Hero = () => {
       <div className="grid sm:grid-cols-3 gap-4 sm:gap-8 items-center">
         {/* Left Side  */}
         <div className="sm:col-span-2 order-2 sm:order-1 ms-auto text-right">
-          <p className="text-2xl text-sky-600 font-bold">Unlocking</p>
-          <h1 className="text-5xl sm:text-8xl font-bold mb-2">
+          <p className="text-6xl text-[#008FD0] font-bold">Unlocking</p>
+          <h1 className="text-5xl sm:text-8xl 2xl:text-9xl font-extrabold mb-2 text-[#002130]">
             ARTIFICIAL <br /> INTELLIGENCE
           </h1>
-          <p className="text-2xl text-sky-600 font-bold">for Superior Healthcare</p>
+          <p className="text-6xl text-[#008FD0] font-bold">for Superior Healthcare</p>
 
           <Link href="https://beta.shealth.ai/">
             <Button
               size="lg"
-              className="ms-auto w-60 h-12 has-[>svg]:px-6 text-white font-bold bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10 mt-10 shadow-[0_4px_20px_rgba(37,99,235,0.5)]"
+              className="ms-auto w-70 h-12 has-[>svg]:px-6 text-white font-bold bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10 mt-10 shadow-[0_4px_20px_rgba(37,99,235,0.5)]"
             >
               <span>Try Now</span>
               <Plus className="size-4" />

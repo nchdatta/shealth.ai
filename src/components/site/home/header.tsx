@@ -44,38 +44,38 @@ const Header = () => {
 
             <div className="w-[1px] h-6 bg-black/90" />
 
-            <nav className="hidden md:flex items-center gap-4 text-gray-700 font-medium uppercase">
+            <nav className="hidden md:flex items-center gap-3 text-gray-700 font-medium uppercase">
               <Button
-                variant="ghost"
-                className="text-gray-700 font-medium uppercase"
+                variant="linkV2"
+                className="text-gray-700 font-medium uppercase hover:text-[#008FD0]"
                 onClick={() => handleScrollTo('#about')}
               >
                 About Us
               </Button>
               <Button
-                variant="ghost"
-                className="text-gray-700 font-medium uppercase"
+                variant="linkV2"
+                className="text-gray-700 font-medium uppercase hover:text-[#008FD0]"
                 onClick={() => handleScrollTo('#services')}
               >
                 Services
               </Button>
               <Button
-                variant="ghost"
-                className="text-gray-700 font-medium uppercase"
+                variant="linkV2"
+                className="text-gray-700 font-medium uppercase hover:text-[#008FD0]"
                 onClick={() => handleScrollTo('#resources')}
               >
                 Resources
               </Button>
               <Button
-                variant="ghost"
-                className="text-gray-700 font-medium uppercase"
+                variant="linkV2"
+                className="text-gray-700 font-medium uppercase hover:text-[#008FD0]"
                 onClick={() => handleScrollTo('#appointments')}
               >
                 Appointments
               </Button>
               <Button
-                variant="ghost"
-                className="text-gray-700 font-medium uppercase"
+                variant="linkV2"
+                className="text-gray-700 font-medium uppercase hover:text-[#008FD0]"
                 onClick={() => handleScrollTo('#contact')}
               >
                 Contact Us

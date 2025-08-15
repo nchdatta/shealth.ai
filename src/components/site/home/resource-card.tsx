@@ -16,7 +16,7 @@ interface Props {
 const ResourceCard = ({ item, className, colorScheme = 'blue' }: Props) => {
   return (
     <div className={className}>
-      <div className="border border-t-blue-400 border-r-blue-400 border-l-blue-200 border-b-blue-200 px-2 sm:px-3.5 py-4 sm:py-4 rounded-tl-[4rem] rounded-tr-[1.5rem] rounded-br-[4rem] rounded-bl-[1.5rem] sm:rounded-tl-[7rem] sm:rounded-tr-[2.5rem] sm:rounded-br-[7rem] sm:rounded-bl-[2.5rem] relative">
+      <div className="sm:w-80 border border-t-blue-400 border-r-blue-400 border-l-blue-200 border-b-blue-200 px-2 sm:px-3.5 py-4 sm:py-4 rounded-tl-[4rem] rounded-tr-[1.5rem] rounded-br-[4rem] rounded-bl-[1.5rem] sm:rounded-tl-[7rem] sm:rounded-tr-[2.5rem] sm:rounded-br-[7rem] sm:rounded-bl-[2.5rem] relative bg-[rgba(205,215,237,0.6)]">
         {/* badge  */}
         <div className="flex justify-end">
           <span
@@ -34,7 +34,9 @@ const ResourceCard = ({ item, className, colorScheme = 'blue' }: Props) => {
         </div>
 
         {/* Title */}
-        <h3 className="mb-4 text-center text-lg font-bold text-slate-900">{item.title}</h3>
+        <h3 className="mb-4 text-center text-lg sm:text-xl font-bold text-slate-900">
+          {item.title}
+        </h3>
 
         {/* Description */}
         <p className="mb-6 text-center text-xs sm:text-lg font-normal text-slate-600">

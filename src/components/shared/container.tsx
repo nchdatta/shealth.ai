@@ -9,7 +9,7 @@ interface Props {
 
 const Container = ({ as: Tag = 'div', className, id, children }: Props) => {
   return (
-    <Tag id={id} className={cn('container max-w-[1400px] mx-auto px-3', className)}>
+    <Tag id={id} className={cn('container max-w-[1770px] mx-auto px-3', className)}>
       {children}
     </Tag>
   );

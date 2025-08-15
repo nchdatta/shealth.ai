@@ -7,9 +7,9 @@ import Container from '../../shared/container';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#dfe6ff] pt-10 rounded-tl-[5rem] sm:rounded-tl-[10rem]">
+    <footer className="bg-[#CDD2EE] pt-10 sm:pt-16 sm:px-4 rounded-tl-[5rem] sm:rounded-tl-[8rem] 2xl:rounded-tl-[10rem]">
       <Container>
-        <Image src="/logo.svg" alt="Shealth AI Logo" width={150} height={50} className="mb-4" />
+        <Image src="/logo.svg" alt="Shealth AI Logo" width={150} height={50} className="mb-6" />
 
         {/* Top section with two columns */}
         <div className="grid md:grid-cols-2 gap-8 md:gap-10 items-start md:items-end">
@@ -18,7 +18,7 @@ const Footer = () => {
             <h3 className="text-[#0056d2] font-medium sm:font-bold text-xl sm:text-3xl leading-snug">
               Unlocking Artificial Intelligence For Superior Healthcare
             </h3>
-            <div className="mt-8">
+            <div className="mt-10">
               <h4 className="text-[#0056d2] font-bold text-lg sm:text-xl">Hours:</h4>
               <p className="mt-2 flex flex-wrap items-center gap-2 text-gray-800">
                 <Clock size={16} />

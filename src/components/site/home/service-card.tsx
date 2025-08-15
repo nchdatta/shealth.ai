@@ -13,7 +13,7 @@ interface Props {
 const ServiceCard = ({ item, className, colorScheme = 'blue' }: Props) => {
   return (
     <div className={className}>
-      <div className="sm:w-80 border border-t-blue-400 border-r-blue-400 border-l-blue-200 border-b-blue-200 px-2 sm:px-6 py-4 sm:py-7 rounded-tr-[4rem] rounded-tl-[1.5rem] rounded-bl-[4rem] rounded-br-[1.5rem] sm:rounded-tr-[7rem] sm:rounded-tl-[2.5rem] sm:rounded-bl-[7rem] sm:rounded-br-[2.5rem] relative">
+      <div className="sm:w-80 border border-t-blue-400 border-r-blue-400 border-l-blue-200 border-b-blue-200 px-2 sm:px-6 py-4 sm:py-7 rounded-tr-[4rem] rounded-tl-[1.5rem] rounded-bl-[4rem] rounded-br-[1.5rem] sm:rounded-tr-[7rem] sm:rounded-tl-[2.5rem] sm:rounded-bl-[7rem] sm:rounded-br-[2.5rem] relative bg-[rgba(205,215,237,0.6)]">
         {/* badge  */}
         <div className="flex justify-start mb-4 sm:mb-0">
           <div
@@ -37,7 +37,7 @@ const ServiceCard = ({ item, className, colorScheme = 'blue' }: Props) => {
         </div>
 
         {/* Title */}
-        <h3 className="text-center text-sm sm:text-lg font-semibold text-slate-900">
+        <h3 className="text-center text-lg sm:text-xl font-semibold text-slate-900">
           {item.title}
         </h3>
       </div>

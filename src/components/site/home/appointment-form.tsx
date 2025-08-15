@@ -31,8 +31,8 @@ const AppointmentForm = () => {
   };
 
   return (
-    <Container as="section" id="appointments">
-      <h2 className="text-3xl font-bold text-center">Book an Appointment</h2>
+    <Container as="section" id="appointments" className="py-20 sm:py-40">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center">Book an Appointment</h2>
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="mt-10 grid gap-10  py-10 sm:py-20">
@@ -46,7 +46,7 @@ const AppointmentForm = () => {
                     <Input
                       {...field}
                       placeholder="Name"
-                      className="border-0 border-b placeholder:text-gray-800 border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
+                      className="border-0 border-b placeholder:text-[#002130] placeholder:text-lg border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
                     />
                   </FormControl>
                   <FormMessage className="text-red-500 text-sm mt-1" />
@@ -63,7 +63,7 @@ const AppointmentForm = () => {
                       {...field}
                       type="email"
                       placeholder="Email"
-                      className="border-0 border-b placeholder:text-gray-800 border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
+                      className="border-0 border-b placeholder:text-[#002130] placeholder:text-lg border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
                     />
                   </FormControl>
                   <FormMessage className="text-red-500 text-sm mt-1" />
@@ -83,7 +83,7 @@ const AppointmentForm = () => {
                       {...field}
                       type="tel"
                       placeholder="Phone"
-                      className="border-0 border-b placeholder:text-gray-800 border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
+                      className="border-0 border-b placeholder:text-[#002130] placeholder:text-lg border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
                     />
                   </FormControl>
                   <FormMessage className="text-red-500 text-sm mt-1" />
@@ -101,7 +101,7 @@ const AppointmentForm = () => {
                       onChange={field.onChange}
                       placeholder="Select date"
                       icon={false}
-                      className="border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500 text-gray-800 bg-transparent font-normal"
+                      className="border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500 text-[#002130] text-lg bg-transparent font-normal"
                     />
                   </FormControl>
                   <FormMessage className="text-red-500 text-sm mt-1" />
@@ -120,7 +120,7 @@ const AppointmentForm = () => {
                     {...field}
                     rows={4}
                     placeholder="Message"
-                    className="border-0 border-b placeholder:text-gray-800 border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
+                    className="border-0 border-b placeholder:text-[#002130] placeholder:text-lg border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500"
                   />
                 </FormControl>
                 <FormMessage className="text-red-500 text-sm mt-1" />
@@ -131,12 +131,10 @@ const AppointmentForm = () => {
           <Button
             type="submit"
             size="lg"
-            className="w-full mx-auto sm:w-fit mt-4 flex items-center gap-2 bg-[#0066ff] text-white rounded-full hover:bg-blue-700 transition  shadow-[0_4px_20px_rgba(37,99,235,0.5)]"
+            className="w-full h-12 sm:w-70 mx-auto mt-4 has-[>svg]:px-6 flex items-center justify-between gap-2 bg-[#0066ff] text-white rounded-full hover:bg-blue-700 transition shadow-[0_4px_20px_rgba(37,99,235,0.5)]"
           >
-            <div className="sm:w-44 flex items-center gap-4 justify-between">
-              Book Now
-              <Plus size={16} />
-            </div>
+            <span>Book Now</span>
+            <Plus size={18} className="size-4" />
           </Button>
         </form>
       </Form>
