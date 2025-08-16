@@ -7,9 +7,11 @@ import { Form, FormControl, FormField, FormItem, FormMessage } from '@/component
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { AppointmentFormSchema } from '@/lib/schemas';
+import axiosInstance from '@/lib/services/axios';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Plus } from 'lucide-react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 import * as z from 'zod';
 
 type AppointmentFormValues = z.infer<typeof AppointmentFormSchema>;
@@ -26,8 +28,30 @@ const AppointmentForm = () => {
     },
   });
 
-  const onSubmit = (values: AppointmentFormValues) => {
-    console.log(values);
+  const isPending = form.formState.isSubmitting;
+
+  const onSubmit = async (values: AppointmentFormValues) => {
+    const formattedValues = {
+      ...values,
+      date: values.date.toISOString()?.split('T')[0],
+    };
+
+    try {
+      const response: any = await axiosInstance.post('/', formattedValues, {
+        params: { type: 'appointment', action: 'add' },
+      });
+
+      if (response?.success) {
+        toast.success('Appointment successful!');
+      } else {
+        toast.error('Appointment failed. Please try again.');
+      }
+
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      toast.error('An error occurred while booking. Please try again later.');
+    }
   };
 
   return (
@@ -137,9 +161,10 @@ const AppointmentForm = () => {
           <Button
             type="submit"
             size="lg"
+            disabled={isPending}
             className="w-full h-12 sm:w-70 mx-auto mt-4 has-[>svg]:px-6 flex items-center justify-between gap-2 bg-[#0066ff] text-white rounded-full hover:bg-blue-700 transition shadow-[0_4px_20px_rgba(37,99,235,0.5)]"
           >
-            <span>Book Now</span>
+            <span>{isPending ? 'Booking...' : 'Book Now'}</span>
             <Plus size={18} className="size-4" />
           </Button>
         </form>
