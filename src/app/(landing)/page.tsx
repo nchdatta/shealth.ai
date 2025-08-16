@@ -9,7 +9,7 @@ import UnleashingSection from '@/components/site/home/unleashing-section';
 
 const Home = () => {
   return (
-    <div className="overflow-hidden bg-[rgba(205,215,237,0.6)]">
+    <div className="overflow-hidden">
       <div
         className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat"
         style={{
@@ -24,7 +24,7 @@ const Home = () => {
       </div>
 
       <div
-        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat bg-contain"
+        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat bg-contain bg-red-600"
         style={{
           backgroundImage: "url('/placeholders/shape-10.jpg')",
           backgroundSize: '100%',
