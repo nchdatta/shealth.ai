@@ -37,11 +37,11 @@ const AppointmentForm = () => {
     };
 
     try {
-      const response: any = await axiosInstance.post('', formattedValues, {
+      const response = await axiosInstance.post('', formattedValues, {
         params: { type: 'appointment', action: 'add' },
       });
 
-      if (response?.success) {
+      if (response?.data?.success) {
         toast.success('Appointment successful!');
       } else {
         toast.error('Appointment failed. Please try again.');

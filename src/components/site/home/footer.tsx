@@ -1,4 +1,4 @@
-import { Clock, Mail, Phone } from 'lucide-react';
+import { Clock, Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Copyright from '../../layout/copyright';
@@ -28,7 +28,7 @@ const Footer = () => {
           </div>
 
           {/* Right Column */}
-          <div className="md:pl-8 pb-5 sm:pb-20">
+          <div className="md:pl-8 pb-5 sm:pb-20" id="contact-us">
             <h4 className="text-[#0056d2] font-bold text-lg sm:text-xl">Contact Us:</h4>
             <p className="mt-2 flex flex-wrap items-center gap-2 text-gray-800">
               <Clock size={16} />
@@ -48,6 +48,10 @@ const Footer = () => {
               <Mail size={16} />
               info@shealth.ai
             </Link>
+            <p className="mt-2 flex flex-wrap items-center gap-2 text-gray-800">
+              <MapPin size={17} />
+              S2308, Emirates Financial Towers, DIFC, Dubai United Arab Emirates.
+            </p>
           </div>
 
           <div className="hidden sm:inline-block absolute w-[1.5px] h-40 bg-[#002130] left-0 -bottom-8 -translate-x-0" />

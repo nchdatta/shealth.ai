@@ -82,7 +82,7 @@ const Header = () => {
               <Button
                 variant="linkV2"
                 className="text-gray-700 font-medium uppercase hover:text-[#008FD0]"
-                onClick={() => handleScrollTo('#contact')}
+                onClick={() => handleScrollTo('#contact-us')}
               >
                 Contact Us
               </Button>

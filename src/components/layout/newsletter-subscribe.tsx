@@ -23,11 +23,11 @@ const NewsletterSubscribe = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      const response: any = await axiosInstance.post('', values, {
+      const response = await axiosInstance.post('', values, {
         params: { type: 'subscription', action: 'add' },
       });
 
-      if (response?.success) {
+      if (response?.data?.success) {
         toast.success('Subscription successful!');
       } else {
         toast.error('Subscription failed. Please try again.');
