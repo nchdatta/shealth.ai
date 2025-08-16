@@ -23,7 +23,7 @@ const NewsletterSubscribe = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      const response: any = await axiosInstance.post('/', values, {
+      const response: any = await axiosInstance.post('', values, {
         params: { type: 'subscription', action: 'add' },
       });
 

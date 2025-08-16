@@ -37,7 +37,7 @@ const AppointmentForm = () => {
     };
 
     try {
-      const response: any = await axiosInstance.post('/', formattedValues, {
+      const response: any = await axiosInstance.post('', formattedValues, {
         params: { type: 'appointment', action: 'add' },
       });
 
