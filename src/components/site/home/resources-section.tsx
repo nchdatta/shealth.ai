@@ -4,7 +4,7 @@ import ResourceCard from './resource-card';
 const ResourcesSection = () => {
   return (
     <Container as="section" id="resources" className="relative py-10 sm:my-20">
-      <div className="absolute w-[1.5px] h-2/3 bg-[#002130] right-3 top-0" />
+      <div className="hidden xl:block absolute w-[1.5px] h-2/3 bg-[#002130] right-3 top-0" />
 
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-14 xl:gap-28 items-start">
         {/* Left: Cards */}
@@ -20,7 +20,7 @@ const ResourcesSection = () => {
                 count: 1,
               }}
               colorScheme="#0063FF"
-              className="pt-8"
+              className="xl:mt-15 flex-1 sm:grow-0"
             />
             <ResourceCard
               item={{
@@ -32,6 +32,7 @@ const ResourcesSection = () => {
                 count: 2,
               }}
               colorScheme="#0063FF"
+              className="-mt-20 xl:-mt-0 flex-1 sm:grow-0"
             />
           </div>
         </div>
@@ -42,7 +43,7 @@ const ResourcesSection = () => {
             Resources
           </h2>
 
-          <div className="mt-10 space-y-10">
+          <div className="mt-6 space-y-6">
             <div>
               <h3 className="text-xl font-bold text-blue-700 dark:text-blue-100">Dummy copy</h3>
               <p className="mt-2 text-lg text-[#002130] dark:text-slate-300">
@@ -54,11 +55,11 @@ const ResourcesSection = () => {
 
             <div>
               <h3 className="text-xl font-bold text-blue-700 dark:text-blue-100">Dummy copy</h3>
-              <p className="mt-2 text-lg text-[#002130] dark:text-slate-300">
+              <p className="mt-1.5 text-lg text-[#002130] dark:text-slate-300">
                 Over the years, we have grown to become one of the most trusted healthcare providers
                 in the area.
               </p>
-              <p className="mt-2 text-lg text-[#002130] dark:text-slate-300">
+              <p className="mt-1.5 text-lg text-[#002130] dark:text-slate-300">
                 Over the years, we have grown to become one of the most trusted healthcare providers
                 in the area.
               </p>
@@ -67,7 +68,7 @@ const ResourcesSection = () => {
         </div>
       </div>
 
-      <div className="max-w-xl mx-auto mt-5 sm:-mt-24 xl:-mt-52">
+      <div className="max-w-xl mx-auto mt-5">
         <div className="flex items-center gap-4 sm:gap-5">
           <ResourceCard
             item={{
@@ -78,7 +79,7 @@ const ResourcesSection = () => {
               count: 3,
             }}
             colorScheme="#A63AB3"
-            className="flex-1"
+            className="-mt-0 xl:-mt-40 flex-1 sm:grow-0"
           />
           <ResourceCard
             item={{
@@ -90,7 +91,7 @@ const ResourcesSection = () => {
               count: 4,
             }}
             colorScheme="#A63AB3"
-            className="sm:pt-72 flex-1"
+            className="-mt-14 xl:-mt-0 flex-1 sm:grow-0"
           />
         </div>
       </div>

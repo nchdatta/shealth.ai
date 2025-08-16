@@ -13,9 +13,9 @@ const AboutSection = () => {
         id="about"
         className="py-10 sm:pt-24 sm:pb-36 relative bg-[rgba(205,215,237,0.6)]"
       >
-        <div className="absolute w-[1.5px] h-16 bg-[#002130] left-3 top-10 xl:top-24" />
-        <div className="absolute w-[1.5px] h-24 xl:h-5/12 bg-[#002130] left-3/8 top-10 xl:top-24 mx-4" />
-        <div className="absolute w-[1.5px] h-32 bg-[#002130] right-3 top-10 xl:top-24" />
+        <div className="absolute w-[1.5px] h-16 bg-[#002130] left-3 xl:left-8 top-10 xl:top-24" />
+        <div className="absolute w-[1.5px] h-24 xl:h-5/12 bg-[#002130] left-3/8 top-10 xl:top-24 mx-6" />
+        <div className="absolute w-[1.5px] h-32 bg-[#002130] right-3 xl:right-8 top-10 xl:top-24" />
 
         <div className="grid grid-cols-1 xl:grid-cols-5 items-center gap-8 sm:gap-4 border-t-2 border-[#002130] pt-28 lg:pt-44">
           <div className="xl:col-span-2 flex flex-col gap-4">

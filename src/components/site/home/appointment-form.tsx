@@ -56,9 +56,9 @@ const AppointmentForm = () => {
 
   return (
     <Container as="section" id="appointments" className="pt-10 pb-20 relative">
-      <div className="absolute w-[1.5px] h-64 bg-[#002130] left-3 -top-44" />
+      <div className="absolute w-[1.5px] h-64 bg-[#002130] left-3 xl:left-8 -top-44" />
       <div className="absolute w-[1.5px] h-20 lg:h-36 bg-[#002130] right-20 lg:right-44 top-0 lg:-top-10" />
-      <div className="absolute w-[1.5px] h-48 lg:h-64 bg-[#002130] right-3 -top-16 lg:-top-28" />
+      <div className="absolute w-[1.5px] h-48 lg:h-64 bg-[#002130] right-3 xl:right-8 -top-16 lg:-top-28" />
 
       <h2 className="text-3xl sm:text-4xl font-bold text-center border-t-2 border-[#002130] pt-14">
         Book an Appointment

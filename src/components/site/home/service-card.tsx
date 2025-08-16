@@ -13,7 +13,7 @@ interface Props {
 const ServiceCard = ({ item, className, colorScheme = 'blue' }: Props) => {
   return (
     <div className={className}>
-      <div className="sm:w-80 border border-t-blue-400 border-r-blue-400 border-l-blue-200 border-b-blue-200 px-2 sm:px-6 py-4 sm:py-7 rounded-tr-[4rem] rounded-tl-[1.5rem] rounded-bl-[4rem] rounded-br-[1.5rem] sm:rounded-tr-[7rem] sm:rounded-tl-[2.5rem] sm:rounded-bl-[7rem] sm:rounded-br-[2.5rem] relative bg-[rgba(205,215,237,0.6)]">
+      <div className="w-40 sm:w-80 border border-t-blue-400 border-r-blue-400 border-l-blue-300 border-b-blue-300 px-4 sm:px-6 py-4 sm:py-7 rounded-tr-[4rem] rounded-tl-[1.5rem] rounded-bl-[4rem] rounded-br-[1.5rem] sm:rounded-tr-[7rem] sm:rounded-tl-[2.5rem] sm:rounded-bl-[7rem] sm:rounded-br-[2.5rem] relative bg-[rgba(205,215,237,0.6)]">
         {/* badge  */}
         <div className="flex justify-start mb-4 sm:mb-0">
           <div
@@ -26,7 +26,7 @@ const ServiceCard = ({ item, className, colorScheme = 'blue' }: Props) => {
           </div>
         </div>
 
-        <div className="mx-auto mb-5 sm:mb-10 flex w-full h-auto sm:h-[200px] sm:w-[200px] items-center justify-center rounded-2xl text-blue-500">
+        <div className="mx-auto mb-5 sm:mb-10 flex w-20 h-auto sm:h-[200px] sm:w-[200px] items-center justify-center rounded-2xl text-blue-500">
           <Image
             src={item.image}
             alt={item.title}

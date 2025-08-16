@@ -7,9 +7,13 @@ import Link from 'next/link';
 
 const UnleashingSection = () => {
   return (
-    <Container as="section" id="about" className="py-20 sm:py-40 relative">
-      <div className="absolute w-[1.5px] h-full bg-[#002130] left-3 top-0" />
-      <div className="absolute w-[1.5px] h-1/3 bg-[#002130] right-3 top-0" />
+    <Container
+      as="section"
+      id="about"
+      className="py-20 sm:py-40 relative bg-[rgba(205,215,237,0.6)]"
+    >
+      <div className="absolute w-[1.5px] h-11/12 bg-[#002130] left-3 xl:left-8 top-0" />
+      <div className="absolute w-[1.5px] h-1/8 bg-[#002130] right-3 xl:right-8 top-0" />
 
       <div className="w-full max-w-4xl mx-auto flex flex-col items-center text-center">
         <h2 className="text-4xl sm:text-5xl 2xl:text-7xl font-bold px-1.5 sm:px-0 mb-8">

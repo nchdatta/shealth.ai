@@ -16,7 +16,7 @@ const ServiceSection = () => {
               Our <span className="sm:block"> Services</span>
             </h2>
 
-            <div className="mt-8 space-y-10">
+            <div className="mt-8 space-y-10 pr-1.5 xl:pr-0">
               <p className="mt-2 text-lg text-[#002130] dark:text-slate-300">
                 Since our founding in 1985, Unlocking Artificial Intelligence for Superior
                 Healthcare has been dedicated to providing high-quality medical care to our
@@ -32,7 +32,7 @@ const ServiceSection = () => {
           {/* Right: Cards */}
           <div className="xl:col-span-2">
             {/* Layout with subtle offsets to mimic the design */}
-            <div className="flex items-center gap-4 w-[90%] lg:w-full mb-2">
+            <div className="flex items-center gap-4 mb-2">
               <ServiceCard
                 item={{
                   title: 'Clinical Research',
@@ -52,7 +52,7 @@ const ServiceSection = () => {
               />
             </div>
 
-            <div className="flex items-center gap-4 sm:pl-28">
+            <div className="flex items-center justify-end gap-4 sm:pl-28">
               <ServiceCard
                 item={{
                   title: 'Diagnostic',
