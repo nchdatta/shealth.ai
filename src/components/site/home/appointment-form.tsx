@@ -67,7 +67,7 @@ const AppointmentForm = () => {
 
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="mt-10 grid gap-10">
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
               <FormField
                 control={form.control}
                 name="name"
@@ -101,9 +101,7 @@ const AppointmentForm = () => {
                   </FormItem>
                 )}
               />
-            </div>
 
-            <div className="grid md:grid-cols-2 gap-4">
               <FormField
                 control={form.control}
                 name="phone"
@@ -132,7 +130,7 @@ const AppointmentForm = () => {
                         onChange={field.onChange}
                         placeholder="Select date"
                         icon={false}
-                        className="border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500 text-[#002130] text-lg bg-transparent font-normal"
+                        className="border-0 border-b border-gray-300 rounded-none focus-visible:ring-0 focus:border-blue-500 text-[#002130] text-lg bg-transparent font-normal px-3"
                       />
                     </FormControl>
                     <FormMessage className="text-red-500 text-sm mt-1" />

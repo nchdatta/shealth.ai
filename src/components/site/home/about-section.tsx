@@ -1,7 +1,7 @@
 'use client';
 
 import Container from '@/components/shared/container';
-import { Button } from '@/components/ui/button';
+import { LinkButton } from '@/components/ui/link-button';
 import { Plus } from 'lucide-react';
 import Image from 'next/image';
 
@@ -41,13 +41,14 @@ const AboutSection = () => {
               area.
             </p>
 
-            <Button
+            <LinkButton
               size="lg"
               className="w-full sm:w-70 h-14 has-[>svg]:px-6 text-white font-bold  bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10  shadow-[0_4px_20px_rgba(37,99,235,0.5)] mt-14"
+              href="https://sandbox.shealth.ai/"
             >
-              <span>Get Started Now</span>
+              <span>TRY IMAGING SANDBOX</span>
               <Plus className="size-4" />
-            </Button>
+            </LinkButton>
           </div>
         </div>
       </Container>
