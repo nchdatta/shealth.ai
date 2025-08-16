@@ -13,7 +13,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 200);
+      setScrolled(window.scrollY > 40);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -38,7 +38,7 @@ const Header = () => {
       <Container className="py-2 sm:py-3">
         <div className="w-full flex items-center justify-between">
           <div className="flex items-center gap-4 2xl:gap-12">
-            <Link href="/" className="inline-block w-20 sm:w-44">
+            <Link href="/" className="inline-block w-20 sm:w-36">
               <Image
                 src="/logo.svg"
                 alt="Logo"

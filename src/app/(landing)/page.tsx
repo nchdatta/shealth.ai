@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       <div
-        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat"
+        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat bg-[rgba(205,215,237,0.3)]"
         style={{
           backgroundImage: "url('/placeholders/shape-7.jpg')",
           backgroundSize: '100%',
@@ -24,9 +24,8 @@ const Home = () => {
       </div>
 
       <div
-        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat bg-contain bg-red-600"
+        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat bg-contain bg-[url('/placeholders/shape-10-2.jpg')] xl:bg-[url('/placeholders/shape-10.jpg')]"
         style={{
-          backgroundImage: "url('/placeholders/shape-10.jpg')",
           backgroundSize: '100%',
           backgroundPosition: 'center top',
         }}

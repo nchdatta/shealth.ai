@@ -3,8 +3,8 @@ import ServiceCard from './service-card';
 
 const ServiceSection = () => {
   return (
-    <div className="bg-[rgba(205,215,237,0.6)]">
-      <Container as="section" id="services" className="relative py-16 bg-[rgba(205,215,237,0.6)]">
+    <div className="bg-[rgba(205,215,237,0.2)]">
+      <Container as="section" id="services" className="relative py-16">
         <div className="border-t-[2px] border-[#002130] left-0 top-0" />
         <div className="absolute w-[1.5px] h-24 xl:h-64 bg-[#002130] left-1/3 top-8 xl:-top-14" />
         <div className="absolute w-[1.5px] h-2/3 bg-[#002130] right-3 -top-2 xl:-top-36" />

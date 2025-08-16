@@ -8,9 +8,9 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <Container as="section" className="pt-30 relative bg-[rgba(205,215,237,0.6)]">
+    <Container as="section" className="pt-30 relative">
       <div className="absolute w-[1.5px] h-full bg-[#002130] left-3 xl:left-8 top-[120px]" />
-      <div className="absolute w-[1.5px] h-40 bg-[#002130] left-[108px] sm:left-[204px] xl:left-[256px] top-20" />
+      <div className="absolute w-[1.5px] h-40 bg-[#002130] left-[108px] sm:left-[192px] xl:left-[225px] top-20" />
       <div className="absolute w-[1.5px] h-6 xl:h-14 bg-[#002130] sm:left-3/6 xl:left-1/2 top-[120px]" />
       <div className="absolute w-[1.5px] h-3/6 bg-[#002130] right-3 xl:right-8 top-[120px]" />
 
