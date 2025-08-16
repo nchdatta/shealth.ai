@@ -48,7 +48,7 @@ const Header = () => {
               />
             </Link>
 
-            <div className="w-[1px] h-6 bg-black/90" />
+            <div className="w-[1.5px] h-6 bg-black/90" />
 
             <nav className="hidden xl:flex items-center gap-1.5 2xl:gap-3 text-gray-700 font-medium uppercase">
               <Button
@@ -100,7 +100,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="w-[1px] h-6 bg-black/90 hidden sm:block" />
+            <div className="w-[1.5px] h-6 bg-black/90 hidden sm:block" />
 
             <Button
               variant="link"

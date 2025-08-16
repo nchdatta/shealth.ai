@@ -3,10 +3,14 @@ import ServiceCard from './service-card';
 
 const ServiceSection = () => {
   return (
-    <Container as="section" id="services" className="relative py-10">
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 sm:gap-28 items-center">
+    <Container as="section" id="services" className="relative py-16 bg-[rgba(205,215,237,0.6)]">
+      <div className="border-t-[2px] border-[#002130] left-0 top-0" />
+      <div className="absolute w-[1.5px] h-24 xl:h-64 bg-[#002130] left-1/3 top-8 xl:-top-14" />
+      <div className="absolute w-[1.5px] h-2/3 bg-[#002130] right-3 -top-2 xl:-top-36" />
+
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-12 xl:gap-28 items-center pt-16">
         {/* Left: Heading and copy */}
-        <div className="sm:col-span-1">
+        <div className="xl:col-span-1">
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-[#002130] dark:text-slate-100">
             Our <span className="sm:block"> Services</span>
           </h2>
@@ -24,9 +28,9 @@ const ServiceSection = () => {
         </div>
 
         {/* Right: Cards */}
-        <div className="sm:col-span-2">
+        <div className="xl:col-span-2">
           {/* Layout with subtle offsets to mimic the design */}
-          <div className="flex items-center gap-4 mb-2">
+          <div className="flex items-center gap-4 w-[90%] lg:w-full mb-2">
             <ServiceCard
               item={{
                 title: 'Clinical Research',

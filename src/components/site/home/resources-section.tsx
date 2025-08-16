@@ -3,10 +3,12 @@ import ResourceCard from './resource-card';
 
 const ResourcesSection = () => {
   return (
-    <Container as="section" id="resources" className="relative py-10">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-14 sm:gap-28 items-start">
+    <Container as="section" id="resources" className="relative py-10 sm:my-20">
+      <div className="absolute w-[1.5px] h-2/3 bg-[#002130] right-3 top-0" />
+
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-14 xl:gap-28 items-start">
         {/* Left: Cards */}
-        <div className="order-2 sm:order-1">
+        <div className="order-2 xl:order-1">
           {/* Layout with subtle offsets to mimic the design */}
           <div className="flex items-center gap-4 sm:gap-5">
             <ResourceCard
@@ -35,7 +37,7 @@ const ResourcesSection = () => {
         </div>
 
         {/* Right: Heading and copy */}
-        <div className="order-1 sm:order-2">
+        <div className="order-1 xl:order-2">
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-[#002130] dark:text-slate-100">
             Resources
           </h2>
@@ -65,7 +67,7 @@ const ResourcesSection = () => {
         </div>
       </div>
 
-      <div className="max-w-xl mx-auto mt-5 sm:-mt-52">
+      <div className="max-w-xl mx-auto mt-5 sm:-mt-24 xl:-mt-52">
         <div className="flex items-center gap-4 sm:gap-5">
           <ResourceCard
             item={{

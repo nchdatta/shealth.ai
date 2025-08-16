@@ -9,7 +9,7 @@ import UnleashingSection from '@/components/site/home/unleashing-section';
 
 const Home = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[rgba(205,215,237,0.6)]">
       <div
         className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat"
         style={{
@@ -24,7 +24,7 @@ const Home = () => {
       </div>
 
       <div
-        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat bg-contain pt-24"
+        className="w-full max-w-[1920px] mx-auto h-full bg-no-repeat bg-contain"
         style={{
           backgroundImage: "url('/placeholders/shape-10.jpg')",
           backgroundSize: '100%',
@@ -33,7 +33,6 @@ const Home = () => {
       >
         <AboutSection />
         <ServicesSection />
-        <ResourcesSection />
       </div>
 
       <div
@@ -41,9 +40,10 @@ const Home = () => {
         style={{
           backgroundImage: "url('/placeholders/shape-11.jpg')",
           backgroundSize: '100%',
-          backgroundPosition: 'left center',
+          backgroundPosition: 'center center',
         }}
       >
+        <ResourcesSection />
         <AppointmentForm />
         <Footer />
       </div>

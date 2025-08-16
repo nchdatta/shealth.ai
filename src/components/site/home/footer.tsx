@@ -42,16 +42,16 @@ const Footer = () => {
               033 123 565 22
             </Link>
             <Link
-              href="mailto:shealth@gmail.com"
+              href="mailto:info@shealth.ai"
               className="mt-2 flex items-center gap-2 text-gray-800 hover:text-blue-600"
             >
               <Mail size={16} />
-              shealth@gmail.com
+              info@shealth.ai
             </Link>
           </div>
 
-          <div className="hidden sm:inline-block absolute w-[2px] h-40 bg-[#002130] left-0 -bottom-8 -translate-x-0" />
-          <div className="absolute w-[2px] h-40 bg-[#002130] right-0 -bottom-8 -translate-x-0" />
+          <div className="hidden sm:inline-block absolute w-[1.5px] h-40 bg-[#002130] left-0 -bottom-8 -translate-x-0" />
+          <div className="absolute w-[1.5px] h-40 bg-[#002130] right-0 -bottom-8 -translate-x-0" />
         </div>
 
         {/* Divider */}

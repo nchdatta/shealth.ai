@@ -31,11 +31,17 @@ const AppointmentForm = () => {
   };
 
   return (
-    <Container as="section" id="appointments" className="py-20 sm:py-40">
-      <h2 className="text-3xl sm:text-4xl font-bold text-center">Book an Appointment</h2>
+    <Container as="section" id="appointments" className="pt-10 pb-20 relative">
+      <div className="absolute w-[1.5px] h-64 bg-[#002130] left-3 -top-44" />
+      <div className="absolute w-[1.5px] h-20 lg:h-36 bg-[#002130] right-20 lg:right-44 top-0 lg:-top-10" />
+      <div className="absolute w-[1.5px] h-48 lg:h-64 bg-[#002130] right-3 -top-16 lg:-top-28" />
+
+      <h2 className="text-3xl sm:text-4xl font-bold text-center border-t-2 border-[#002130] pt-14">
+        Book an Appointment
+      </h2>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="mt-10 grid gap-10  py-10 sm:py-20">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="mt-10 grid gap-10">
           <div className="grid md:grid-cols-2 gap-4">
             <FormField
               control={form.control}
