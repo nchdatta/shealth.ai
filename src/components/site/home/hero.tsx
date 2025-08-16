@@ -23,7 +23,7 @@ const Hero = () => {
           </h1>
           <p className="text-6xl text-[#008FD0] font-bold">for Superior Healthcare</p>
 
-          <Link href="https://beta.shealth.ai/">
+          <Link href="https://beta.shealth.ai/" target="_blank">
             <Button
               size="lg"
               className="ms-auto w-full sm:w-80 h-14 has-[>svg]:px-6 text-white font-bold bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10 mt-10 shadow-[0_4px_20px_rgba(37,99,235,0.5)]"

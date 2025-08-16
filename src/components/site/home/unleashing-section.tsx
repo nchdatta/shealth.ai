@@ -25,6 +25,7 @@ const UnleashingSection = () => {
         <Link
           href="https://sandbox.shealth.ai/"
           className="w-full mx-auto flex justify-center mt-4"
+          target="_blank"
         >
           <Button
             size="lg"

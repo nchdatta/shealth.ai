@@ -45,6 +45,7 @@ const AboutSection = () => {
               size="lg"
               className="w-full sm:w-70 h-14 has-[>svg]:px-6 text-white font-bold  bg-blue-600 hover:bg-blue-800 rounded-3xl flex justify-between items-center gap-10  shadow-[0_4px_20px_rgba(37,99,235,0.5)] mt-14"
               href="https://sandbox.shealth.ai/"
+              target="_blank"
             >
               <span>TRY IMAGING SANDBOX</span>
               <Plus className="size-4" />
