@@ -45,19 +45,19 @@ const ResourcesSection = () => {
 
           <div className="mt-6 space-y-6">
             <div>
-              <h3 className="text-xl font-bold text-blue-700 dark:text-blue-100">Dummy copy</h3>
+              <h3 className="text-xl font-bold text-blue-700 dark:text-blue-100">Our Commitment</h3>
               <p className="mt-2 text-lg text-[#002130] dark:text-slate-300">
-                for Superior Healthcare has been dedicated to providing high-quality medical care to
-                our patients. Over the years, we have grown to become one of the most trusted
-                healthcare providers.
+                Superior Healthcare is dedicated to delivering high-quality medical care with
+                compassion, ensuring every patient receives trusted treatment in a safe environment.
               </p>
             </div>
 
             <div>
-              <h3 className="text-xl font-bold text-blue-700 dark:text-blue-100">Dummy copy</h3>
+              <h3 className="text-xl font-bold text-blue-700 dark:text-blue-100">Building Trust</h3>
               <p className="mt-1.5 text-lg text-[#002130] dark:text-slate-300">
-                Over the years, we have grown to become one of the most trusted healthcare providers
-                in the area.
+                Over the years, we have grown into one of the most reliable healthcare providers in
+                the region, earning the confidence of patients through consistent care and
+                excellence.
               </p>
               <p className="mt-1.5 text-lg text-[#002130] dark:text-slate-300">
                 Over the years, we have grown to become one of the most trusted healthcare providers
