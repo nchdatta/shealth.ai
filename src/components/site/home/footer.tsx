@@ -48,10 +48,12 @@ const Footer = () => {
               <Mail size={16} />
               info@shealth.ai
             </Link>
-            <p className="mt-2 flex flex-wrap items-center gap-2 text-gray-800">
-              <MapPin size={17} />
-              S2308, Emirates Financial Towers, DIFC, Dubai United Arab Emirates.
-            </p>
+            <div className="mt-2 flex items-start gap-2 text-gray-800">
+              <span className="inline-block">
+                <MapPin size={18} />
+              </span>
+              <span> S2308, Emirates Financial Towers, DIFC, Dubai United Arab Emirates.</span>
+            </div>
           </div>
 
           <div className="hidden sm:inline-block absolute w-[1.5px] h-40 bg-[#002130] left-0 -bottom-8 -translate-x-0" />
