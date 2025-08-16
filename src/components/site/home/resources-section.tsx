@@ -16,7 +16,7 @@ const ResourcesSection = () => {
                 title: 'Video Library',
                 description: 'Explore the complete listing of our Webinars and podcasts',
                 image: '/placeholders/video.svg',
-                buttonTitle: 'Explore Now',
+                // buttonTitle: 'Explore Now',
                 count: 1,
               }}
               colorScheme="#0063FF"
@@ -28,7 +28,7 @@ const ResourcesSection = () => {
                 description:
                   'Our research material including eBooks, Case Studies is  available online',
                 image: '/placeholders/download.svg',
-                buttonTitle: 'Download',
+                // buttonTitle: 'Download',
                 count: 2,
               }}
               colorScheme="#0063FF"
@@ -74,7 +74,7 @@ const ResourcesSection = () => {
               title: 'Quick Reads',
               description: 'The Latest on our Blog & Medical  services In The News',
               image: '/placeholders/quick-reads.svg',
-              buttonTitle: 'Read Now',
+              // buttonTitle: 'Read Now',
               count: 3,
             }}
             colorScheme="#A63AB3"
@@ -86,7 +86,7 @@ const ResourcesSection = () => {
               description:
                 'Please get in touch with our Marketing & PR Team for any press or PR related inquiry ',
               image: '/placeholders/press.svg',
-              buttonTitle: 'Contact Us',
+              // buttonTitle: 'Contact Us',
               count: 4,
             }}
             colorScheme="#A63AB3"

@@ -6,7 +6,7 @@ interface Props {
     title: string;
     description: string;
     image: string;
-    buttonTitle: string;
+    buttonTitle?: string;
     count: number;
   };
   colorScheme: string;
@@ -44,17 +44,19 @@ const ResourceCard = ({ item, className, colorScheme = 'blue' }: Props) => {
         </p>
 
         {/* Button */}
-        <div className="flex justify-center">
-          <Button
-            size="sm"
-            className="sm:h-10 rounded-xl sm:px-6 sm:py-2.5 text-sm sm:text-lg sm:font-semibold text-white hover:opacity-80"
-            style={{
-              backgroundColor: colorScheme,
-            }}
-          >
-            {item.buttonTitle}
-          </Button>
-        </div>
+        {item.buttonTitle && (
+          <div className="flex justify-center">
+            <Button
+              size="sm"
+              className="sm:h-10 rounded-xl sm:px-6 sm:py-2.5 text-sm sm:text-lg sm:font-semibold text-white hover:opacity-80"
+              style={{
+                backgroundColor: colorScheme,
+              }}
+            >
+              {item.buttonTitle}
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );
