@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="absolute w-[1.5px] h-6 xl:h-14 bg-[#002130] sm:left-3/6 xl:left-1/2 top-[120px]" />
       <div className="absolute w-[1.5px] h-3/6 bg-[#002130] right-3 xl:right-8 top-[120px]" />
 
-      <div className="grid xl:grid-cols-3 gap-4 sm:gap-8 items-center border-t-2 border-b-2 border-[#002130]">
+      <div className="grid xl:grid-cols-3 gap-4 sm:gap-8 items-center pb-14 xl:pb-0 border-t-2 border-b-2 border-[#002130]">
         {/* Left Side  */}
         <div className="xl:col-span-2 order-2 xl:order-1 ms-auto text-right">
           <p className="text-6xl text-[#008FD0] font-bold">Unlocking</p>
@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute w-[1.5px] h-10 xl:h-16 bg-[#002130] left-1/2  xl:bottom-0" />
+      <div className="absolute w-[1.5px] h-10 xl:h-16 bg-[#002130] left-1/2 bottom-0 xl:bottom-0" />
       <div className="absolute w-[1.5px] h-32 bg-[#002130] right-3 xl:right-8 bottom-0" />
     </Container>
   );
